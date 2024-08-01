@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail - User</title>
+    <link rel="stylesheet" href="css/detail-produk.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="Logo" />
+        </div>
+        <div class="nav-left">
+          <ul class="menu">
+            <li>
+              <a href="makanan.html"><span>Makanan</span></a>
+            </li>
+            <li>
+              <a href="minuman.html"><span>Minuman</span></a>
+            </li>
+          </ul>
+          <div class="search-container">
+            <input type="text" placeholder="Search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+        <div class="mobile-menu-icon">
+          <i class="fa fa-bars"></i>
+        </div>
+      </nav>
+      <main class="content">
+        <div class="product-detail">
+          <img src="images/produk/image 3.png" alt="Mie Jebew" />
+          <div class="product-info">
+            <h2>Mie Jebew</h2>
+            <p class="price">Rp. 8.000</p>
+            <p class="stock">Stok: 25</p>
+            <p class="description">
+              dengan topping yang spesial berupa baso, cincang ayam, dan taburan
+              bawang daun
+            </p>
+            <a
+              href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20memesan%20Mie%20Jebew"
+              class="wa-button"
+            >
+              <i class="fab fa-whatsapp"></i>
+              <span> Pesan melalui WhatsApp</span>
+            </a>
+          </div>
+        </div>
+        <section class="related-products">
+          <h2 style="color: #799351;">Produk Lainnya</h2>
+          <div class="product-grid">
+            <div class="product-card">
+              <img src="images/produk/image 4.png" alt="Dimsum" />
+              <h3>Dimsum</h3>
+              <p class="price">Rp. 10.000</p>
+              <p class="stock">Stok: 13</p>
+            </div>
+            <div class="product-card">
+              <img src="images/produk/image 5.png" alt="Tempe Mendoan" />
+              <h3>Tempe Mendoan</h3>
+              <p class="price">Rp. 2.500</p>
+              <p class="stock">Stok: 8</p>
+            </div>
+            <div class="product-card">
+              <img src="images/produk/image 6.png" alt="Nasi Bakar Ayam Suir" />
+              <h3>Nasi Bakar Ayam Suir</h3>
+              <p class="price">Rp. 6.000</p>
+              <p class="stock">Stok: 19</p>
+            </div>
+            <div class="product-card">
+              <img src="images/produk/image 8.png" alt="Onigiri" />
+              <h3>Onigiri</h3>
+              <p class="price">Rp. 5.000</p>
+              <p class="stock">Stok: 25</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
+      const navLeft = document.querySelector(".nav-left");
+
+      mobileMenuIcon.addEventListener("click", () => {
+        navLeft.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
